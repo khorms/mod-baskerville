@@ -27,8 +27,8 @@ import tempfile
 import numpy as np
 import pandas as pd
 
-from baskerville import data
-from baskerville.helpers import utils
+from mod_baskerville import data
+from mod_baskerville.helpers import utils
 
 try:
     import slurm

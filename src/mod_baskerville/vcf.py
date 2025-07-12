@@ -22,7 +22,7 @@ import tempfile
 import numpy as np
 import pysam
 
-from baskerville import dna
+from mod_baskerville import dna
 
 """
 vcf.py

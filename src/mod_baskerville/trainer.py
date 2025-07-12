@@ -18,8 +18,8 @@ import pdb
 import numpy as np
 import tensorflow as tf
 import tempfile
-from baskerville.helpers.gcs_utils import is_gcs_path, upload_folder_gcs
-from baskerville import metrics
+from mod_baskerville.helpers.gcs_utils import is_gcs_path, upload_folder_gcs
+from mod_baskerville import metrics
 from tensorflow.keras import mixed_precision
 
 

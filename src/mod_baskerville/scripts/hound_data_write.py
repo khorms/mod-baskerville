@@ -23,8 +23,8 @@ import pdb
 import pysam
 import tensorflow as tf
 
-from baskerville import data
-from baskerville import dna
+from mod_baskerville import data
+from mod_baskerville import dna
 
 """
 basenji_data_write.py

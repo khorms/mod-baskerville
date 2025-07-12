@@ -11,12 +11,12 @@ import pysam
 from scipy.special import rel_entr
 from tqdm import tqdm
 
-from baskerville import dna
-from baskerville import dataset
-from baskerville.gene import Transcriptome
-from baskerville import seqnn
-from baskerville import vcf as bvcf
-from baskerville.helpers.trt_optimized_model import OptimizedModel
+from mod_baskerville import dna
+from mod_baskerville import dataset
+from mod_baskerville.gene import Transcriptome
+from mod_baskerville import seqnn
+from mod_baskerville import vcf as bvcf
+from mod_baskerville.helpers.trt_optimized_model import OptimizedModel
 
 
 def score_snps(params_file, model_file, vcf_file, worker_index, options):

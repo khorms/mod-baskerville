@@ -23,9 +23,9 @@ import pandas as pd
 import tensorflow as tf
 from tensorflow.keras import mixed_precision
 
-from baskerville import dataset
-from baskerville import seqnn
-from baskerville import trainer
+from mod_baskerville import dataset
+from mod_baskerville import seqnn
+from mod_baskerville import trainer
 
 """
 hound_train.py

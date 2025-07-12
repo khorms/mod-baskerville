@@ -8,7 +8,7 @@ import pandas as pd
 import tensorflow as tf
 from tensorflow.python.compiler.tensorrt import trt_convert as tf_trt
 
-from baskerville import seqnn
+from mod_baskerville import seqnn
 
 
 precision_dict = {

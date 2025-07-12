@@ -22,7 +22,7 @@ import pandas as pd
 import pysam
 from tqdm import tqdm
 
-from baskerville import dna
+from mod_baskerville import dna
 
 ################################################################################
 # bed.py

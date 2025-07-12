@@ -16,7 +16,7 @@ import pdb
 import numpy as np
 import tensorflow as tf
 
-from baskerville import layers
+from mod_baskerville import layers
 
 
 ############################################################

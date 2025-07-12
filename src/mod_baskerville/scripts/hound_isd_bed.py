@@ -23,12 +23,12 @@ import numpy as np
 import pandas as pd
 import pybedtools
 
-from baskerville import bed
-from baskerville import dataset
-from baskerville import dna
-from baskerville import seqnn
-from baskerville import snps
-from baskerville.gene import Transcriptome
+from mod_baskerville import bed
+from mod_baskerville import dataset
+from mod_baskerville import dna
+from mod_baskerville import seqnn
+from mod_baskerville import snps
+from mod_baskerville.gene import Transcriptome
 
 
 from collections import OrderedDict

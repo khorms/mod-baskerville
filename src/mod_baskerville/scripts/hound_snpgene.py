@@ -20,12 +20,12 @@ import tempfile
 import shutil
 import tensorflow as tf
 
-from baskerville.snps import score_gene_snps
-from baskerville.helpers.gcs_utils import (
+from mod_baskerville.snps import score_gene_snps
+from mod_baskerville.helpers.gcs_utils import (
     upload_folder_gcs,
     download_rename_inputs,
 )
-from baskerville.helpers.utils import load_extra_options
+from mod_baskerville.helpers.utils import load_extra_options
 
 """
 hound_snpgene.py

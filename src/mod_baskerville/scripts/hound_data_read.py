@@ -26,7 +26,7 @@ import scipy.interpolate
 
 import pyBigWig
 
-from baskerville import data
+from mod_baskerville import data
 
 """
 hound_data_read.py

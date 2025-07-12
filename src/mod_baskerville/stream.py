@@ -18,7 +18,7 @@ import pdb
 import numpy as np
 import tensorflow as tf
 
-from baskerville import dna
+from mod_baskerville import dna
 
 
 class PredStreamGen:

@@ -23,10 +23,10 @@ import pandas as pd
 import tensorflow as tf
 from tqdm import tqdm
 
-from baskerville import dataset
-from baskerville import dna
-from baskerville import seqnn
-from baskerville import vcf
+from mod_baskerville import dataset
+from mod_baskerville import dna
+from mod_baskerville import seqnn
+from mod_baskerville import vcf
 
 
 """

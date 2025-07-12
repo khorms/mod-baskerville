@@ -26,7 +26,7 @@ import networkx as nx
 import numpy as np
 import pybedtools
 
-from baskerville import data
+from mod_baskerville import data
 
 """
 hound_data_align.py

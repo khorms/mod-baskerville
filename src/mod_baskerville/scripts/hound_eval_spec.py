@@ -27,8 +27,8 @@ from scipy.stats import pearsonr
 import tensorflow as tf
 from tensorflow.keras import mixed_precision
 
-from baskerville import dataset
-from baskerville import seqnn
+from mod_baskerville import dataset
+from mod_baskerville import seqnn
 
 """
 hound_eval_spec.py

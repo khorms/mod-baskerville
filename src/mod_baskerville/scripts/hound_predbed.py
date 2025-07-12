@@ -25,10 +25,10 @@ import pyBigWig
 import tensorflow as tf
 from tqdm import tqdm
 
-from baskerville import bed
-from baskerville import dataset
-from baskerville import dna
-from baskerville import seqnn
+from mod_baskerville import bed
+from mod_baskerville import dataset
+from mod_baskerville import dna
+from mod_baskerville import seqnn
 
 
 """

@@ -16,15 +16,15 @@
 from optparse import OptionParser
 import pdb
 import os
-from baskerville.snps import score_snps
+from mod_baskerville.snps import score_snps
 import tempfile
 import shutil
 import tensorflow as tf
-from baskerville.helpers.gcs_utils import (
+from mod_baskerville.helpers.gcs_utils import (
     upload_folder_gcs,
     download_rename_inputs,
 )
-from baskerville.helpers.utils import load_extra_options
+from mod_baskerville.helpers.utils import load_extra_options
 
 """
 hound_snp.py

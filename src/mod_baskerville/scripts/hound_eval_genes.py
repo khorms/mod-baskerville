@@ -31,8 +31,8 @@ from scipy.stats import pearsonr
 from sklearn.metrics import explained_variance_score
 
 import pygene
-from baskerville import dataset
-from baskerville import seqnn
+from mod_baskerville import dataset
+from mod_baskerville import seqnn
 
 """
 hound_eval_genes.py
