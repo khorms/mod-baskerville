@@ -21,11 +21,11 @@ from natsort import natsorted
 import numpy as np
 import tensorflow as tf
 
-from mod_baskerville import blocks
-from mod_baskerville import dataset
-from mod_baskerville import layers
-from mod_baskerville import metrics
-from mod_baskerville import transfer
+from baskerville import blocks
+from baskerville import dataset
+from baskerville import layers
+from baskerville import metrics
+from baskerville import transfer
 
 
 class SeqNN:
@@ -145,27 +145,12 @@ class SeqNN:
         self.preds_triu = False
 
         ###################################################
-        # modified to save the outputs of the convolutional blocks with the keys
-        # Initialize representation tracking
-        if save_reprs:
-            self.reprs = []
-            self.repr_keys = []
-        else:
-            self.reprs = []
-        
         # build convolution blocks
         self.reprs = []
-        # modified to save the outputs of the convolutional blocks with the keys
         for bi, block_params in enumerate(self.trunk):
             current = self.build_block(current, block_params)
             if save_reprs:
-                # Create a key to identify this representation
-                repr_key = f"trunk_block_{bi}_{block_params.get('name', 'unknown')}"
                 self.reprs.append(current)
-                # Store the key separately if you want to track them
-                if not hasattr(self, 'repr_keys'):
-                    self.repr_keys = []
-                self.repr_keys.append(repr_key)
 
         # final activation
         current = layers.activate(current, self.activation)
@@ -188,17 +173,8 @@ class SeqNN:
             current = trunk_output
 
             # build blocks
-            # modified to save the outputs of the transformer blocks
             for bi, block_params in enumerate(head):
                 current = self.build_block(current, block_params)
-                if save_reprs:
-                    # Create a key to identify this representation
-                    repr_key = f"head_{hi}_block_{bi}_{block_params.get('name', 'unknown')}"
-                    self.reprs.append(current)
-                    # Store the key separately if you want to track them
-                    if not hasattr(self, 'repr_keys'):
-                        self.repr_keys = []
-                    self.repr_keys.append(repr_key)
 
             if hi < len(self.strand_pair):
                 strand_pair = self.strand_pair[hi]
